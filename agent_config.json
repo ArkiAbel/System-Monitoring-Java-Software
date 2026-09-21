@@ -1,0 +1,5 @@
+{
+  "serverHost" : "localhost",
+  "serverPort" : "55555",
+  "pollSeconds" : 1
+}

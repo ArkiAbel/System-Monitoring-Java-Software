@@ -1,0 +1,4 @@
+{
+  "port" : "55555",
+  "dbPath" : "system_monitoring.db"
+}

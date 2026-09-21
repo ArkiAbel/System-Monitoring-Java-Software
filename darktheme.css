@@ -1,0 +1,292 @@
+/* base szin, font definialas */
+.root {
+    -fx-background-color: #1e1e2e;
+    -fx-font-family: "Segoe UI", "System", sans-serif;
+}
+
+/* dashboard neve */
+.label-header {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #89b4fa;
+    -fx-padding: 15 0 15 20;
+    -fx-background-color: #181825;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0, 0, 1);
+    -fx-border-color: #313244;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* bal oldali lista az agenteknek */
+.list-view {
+    -fx-background-color: #181825;
+    -fx-border-color: #313244;
+    -fx-border-width: 0 1 0 0;
+}
+
+.list-cell {
+    -fx-background-color: #181825;
+    -fx-text-fill: #cdd6f4;
+    -fx-font-size: 14px;
+    -fx-padding: 10 15;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #313244;
+    -fx-cursor: hand;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #45475a;
+    -fx-text-fill: #89b4fa;
+    -fx-font-weight: bold;
+}
+
+/* info box-ok */
+.info-box {
+    -fx-background-color: #181825;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #313244;
+    -fx-border-width: 1;
+    -fx-padding: 12 15 12 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0, 0, 2);
+}
+
+.info-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #a6adc8;
+}
+
+.info-value {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #cdd6f4;
+}
+
+/* progress barok stilusa */
+.progress-bar {
+    -fx-accent: #89b4fa;
+    -fx-background-color: #313244;
+    -fx-background-radius: 6;
+    -fx-pref-height: 12;
+    -fx-max-height: 12;
+}
+
+.progress-bar .bar {
+    -fx-background-radius: 6;
+}
+
+.progress-bar .track {
+    -fx-background-radius: 6;
+    -fx-background-color: #313244;
+}
+
+/* chartok */
+.chart {
+    -fx-background-color: #181825;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #313244;
+    -fx-padding: 10;
+}
+
+.chart-plot-background {
+    -fx-background-color: #181825;
+}
+
+.chart-title {
+    -fx-text-fill: #cdd6f4;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.axis-label {
+    -fx-text-fill: #a6adc8;
+    -fx-font-size: 11px;
+}
+
+.axis-tick-label {
+    -fx-text-fill: #a6adc8;
+    -fx-font-size: 10px;
+}
+
+.chart-series-line {
+    -fx-stroke-width: 2px;
+}
+
+.default-color0.chart-series-line {
+    -fx-stroke: #89b4fa;
+}
+
+.default-color1.chart-series-line {
+    -fx-stroke: #cba6f7;
+}
+
+.chart-line-symbol {
+    -fx-background-color: transparent;
+}
+
+.chart-vertical-grid-lines,
+.chart-horizontal-grid-lines {
+    -fx-stroke: #313244;
+    -fx-stroke-dash-array: 4 4;
+}
+
+/* jobb oldali tabpane */
+.tab-pane {
+    -fx-background-color: transparent;
+    -fx-tab-min-width: 90px;
+}
+
+.tab-pane .tab-header-area {
+    -fx-padding: 5 0 0 0;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #181825;
+    -fx-border-color: #313244;
+    -fx-border-width: 1 1 0 1;
+    -fx-border-radius: 8 8 0 0;
+    -fx-background-radius: 8 8 0 0;
+    -fx-padding: 8 16;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #313244;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #a6adc8;
+    -fx-font-size: 13px;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #89b4fa;
+    -fx-font-weight: bold;
+}
+
+.tab-pane .tab-content-area {
+    -fx-background-color: #181825;
+    -fx-border-color: #313244;
+    -fx-border-radius: 0 0 12 12;
+    -fx-padding: 10;
+}
+
+/* tabpane es listak */
+.custom-list-view {
+    -fx-background-color: #181825;
+    -fx-background-radius: 8;
+}
+
+.custom-list-view .list-cell {
+    -fx-background-color: #181825;
+    -fx-text-fill: #cdd6f4;
+    -fx-font-size: 12px;
+    -fx-padding: 8 12;
+    -fx-border-color: #313244;
+    -fx-border-width: 0 0 1 0;
+}
+
+.custom-list-view .list-cell:odd {
+    -fx-background-color: #1a1a28;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+
+/* szekcio cimkek stilusa */
+.list-section-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #89b4fa;
+    -fx-padding: 8 0 5 5;
+    -fx-background-color: transparent;
+}
+
+.custom-table {
+    -fx-background-color: #181825;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #313244;
+    -fx-table-cell-border-color: transparent;
+}
+
+.custom-table .column-header-background {
+    -fx-background-color: #1e1e2e;
+    -fx-background-radius: 8 8 0 0;
+}
+
+.custom-table .column-header {
+    -fx-background-color: #1e1e2e;
+    -fx-border-color: #313244;
+    -fx-border-width: 0 1 0 0;
+}
+
+.custom-table .column-header .label {
+    -fx-text-fill: #89b4fa;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.custom-table .table-cell {
+    -fx-text-fill: #cdd6f4;
+    -fx-font-size: 12px;
+    -fx-padding: 6 8;
+    -fx-border-color: #313244;
+    -fx-border-width: 0 1 1 0;
+}
+
+/* sorok valtakozo szine */
+.custom-table .table-row-cell {
+    -fx-background-color: #181825;
+}
+
+.custom-table .table-row-cell:odd {
+    -fx-background-color: #1a1a28;
+}
+
+.custom-table .table-row-cell:selected {
+    -fx-background-color: #313244;
+}
+
+.custom-table .table-row-cell:selected .table-cell {
+    -fx-text-fill: #ffffff;
+}
+
+/* gorgetosav */
+.custom-table .scroll-bar {
+    -fx-background-color: #181825;
+}
+
+.custom-table .scroll-bar .thumb {
+    -fx-background-color: #313244;
+    -fx-background-radius: 8;
+}
+
+/* tablazat es gorgetosav hatter */
+.custom-table .placeholder .label {
+    -fx-text-fill: #a6adc8;
+    -fx-background-color: #181825;
+}
+
+.custom-table .column-header-background {
+    -fx-background-color: #1e1e2e;
+}
+
+.table-view .filler {
+    -fx-background-color: #1e1e2e;
+}
+
+.custom-table .corner {
+    -fx-background-color: #1e1e2e;
+}
